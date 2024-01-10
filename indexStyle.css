@@ -1,0 +1,64 @@
+#homepage_heading {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.homepage_heading_item {
+    padding: 10px;
+    text-align: center;
+}
+
+#title0 {
+    color: violet;
+    font-family: Chalkduster, fantasy;
+    font-size: 60px;
+    animation: shiny 6s infinite linear;
+    white-space: nowrap;
+}
+
+#title0_description {
+    color: gray;
+    font-family: Snell Roundhand, cursive;
+    font-size: 25px;
+}
+
+#violet_flower {
+    margin: 20px;
+    opacity: 0.8;
+    animation: spin 20s infinite linear;
+}
+
+.homepage_display1_item {
+    opacity: 0.8;
+    padding: 10px;
+    margin: 12px;
+    border: 4px outset lavender;
+    border-radius: 8px;
+}
+
+@keyframes shiny {
+    from {
+        text-shadow: 2px 2px lavender;
+    }
+
+    50% {
+        text-shadow: 2px 2px darkslateblue;
+        opacity: 0;
+    }
+
+    100% {
+        text-shadow: 2px 2px lavender;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
